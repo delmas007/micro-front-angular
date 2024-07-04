@@ -41,7 +41,7 @@ export class LoginComponent implements OnInit{
     this.apiService.Login(username, password)
       .then((token: any) => {
         console.log(token);
-        // this.router.navigateByUrl(`/verification/${token.email}`)
+        this.router.navigateByUrl(`/verification/${token.mail}`)
       })
       .catch(err => {
         if (err.error && err.error.message) {

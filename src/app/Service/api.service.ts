@@ -7,6 +7,7 @@ import {firstValueFrom} from "rxjs";
 })
 export class ApiService {
   private host1 = 'http://localhost:8000/api';
+  private host2 = 'http://localhost:5050/';
 
   constructor(private http: HttpClient) { }
 
@@ -14,6 +15,13 @@ export class ApiService {
     const body = { username: username, password: password };
     return await firstValueFrom(
       this.http.post<any>(`${this.host1}/login/`, body)
+    );
+  }
+  async Verification(code: string): Promise<any> {
+    const body = { code: code };
+
+    return await firstValueFrom(
+      this.http.post<any>(`${this.host2}verify-code/`, body)
     );
   }
 }
