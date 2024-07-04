@@ -13,7 +13,7 @@ export class ApiService {
   async Login(username: string, password: string): Promise<any> {
     const body = { username: username, password: password };
     return await firstValueFrom(
-      this.http.post<any>(`${this.host1}/login`, body)
+      this.http.post<any>(`${this.host1}/login/`, body)
     );
   }
 }
