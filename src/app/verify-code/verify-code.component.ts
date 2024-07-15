@@ -40,7 +40,7 @@ export class VerifyCodeComponent implements OnInit {
       .then((response: any) => {
         console.log(response)
         if (response == 1){
-         console.log('code valide')
+          this.router.navigateByUrl(`/bienvenu`)
         }else{
           this.isError = true;
           setTimeout(() => this.isError = false, 5000);
