@@ -36,7 +36,7 @@ export class VerifyCodeComponent implements OnInit {
     const code = this.digits.join('');
     console.log('Vérification du code:', code);
     this.email = this.activatedRoute.snapshot.params['email']
-    this.apiService.Verification(code)
+    this.apiService.Verification(code,this.email)
       .then((response: any) => {
         console.log(response)
         if (response == 1){
