@@ -7,9 +7,7 @@
           <div class="col-12 col-xl-9">
             <!--            <img class="img-fluid rounded mb-4" loading="lazy" [src]="'assets/logo.png'" width="245" height="80" alt="Logo">-->
             <hr class="border-primary-subtle mb-4">
-            <h2 class="h1 mb-4">Bienvenue sur Notre Plateforme</h2>
-            <p class="lead mb-5">Notre plateforme vous permet d'importer des fichiers PDF, Word, Excel ou PowerPoint. Une fois importé, notre système extrait automatiquement le contenu pour vous permettre de poser des questions à notre IA, basée sur le modèle GPT-4. Elle génère ensuite des réponses pertinentes à partir du contexte du document. Vous pouvez également nous donner votre feedback pour améliorer continuellement notre système.</p>
-            <div class="text-endx">
+            <h2 class="h1 mb-4">Bienvenue sur Notre Plateforme</h2><div class="text-endx">
               <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-grip-horizontal" viewBox="0 0 16 16">
                 <path d="M2 8a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm0-3a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm3 3a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm0-3a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm3 3a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm0-3a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm3 3a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm0-3a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm3 3a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm0-3a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
               </svg>
@@ -24,7 +22,6 @@
               <div class="col-12">
                 <div class="mb-4">
                   <h3>Se connecter</h3>
-                  <p>Vous n'avez pas de compte ? <a routerLink="/inscription">Inscription</a></p>
                 </div>
               </div>
             </div>
@@ -43,14 +40,6 @@
                   </div>
                 </div>
                 <div class="col-12">
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" name="remember_me" id="remember_me">
-                    <label class="form-check-label text-secondary" for="remember_me">
-                      Rester connecté
-                    </label>
-                  </div>
-                </div>
-                <div class="col-12">
                   <div class="d-grid">
                     <button class="btn btn-primary btn-lg" type="submit" [disabled]="loading">
                       <span *ngIf="loading" class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
@@ -61,13 +50,6 @@
                 </div>
               </div>
             </form>
-            <div class="row">
-              <div class="col-12">
-                <div class="d-flex gap-2 gap-md-4 flex-column flex-md-row justify-content-md-end mt-4">
-                  <a href="#!">Mot de passe oublié</a>
-                </div>
-              </div>
-            </div>
             <!--            <div class="row">-->
             <!--              <div class="col-12">-->
             <!--                <p class="mt-4 mb-4">Or continue with</p>-->
